@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-Library</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div id="black"></div>
+    <div id="nav">
+        <ul>
+            <li id="library">library</li>
+            <li id="login">log in</li>
+        </ul>
+    </div>
+    <div id="add">+Add Book</div>
+
+    <form>
+        <div id="form">
+            <div class="book">Add new Book</div>
+            <br>
+            <!-- <br> -->
+            <input id="title" type="text" name="title" placeholder="Title">
+            <br>
+            <br>
+            <input type="text" id="author" placeholder="Author" name="name">
+            <br>
+            <br>
+            <input type="text" id="page" placeholder="Pages" name="name" maxlength="5">
+            <br>
+            <br>
+            <div id="check">Have you read it?<input id="checkbox" type="checkbox"></div>
+            <br>
+            <!-- <br> -->
+            <button id="button">Submit</button>
+        </div>
+    </form>
+
+    <div id="book_library">
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
