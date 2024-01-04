@@ -1,16 +1,21 @@
 const form = document.getElementById('form')
 form.style.display = 'none';
+
 const add = document.getElementById('add')
+
 add.addEventListener('click', function () {
     form.style.display = 'block';
     black.style.display = 'block'
 })
+
 const body = document.getElementById('black');
 black.style.display = 'none'
+
 body.onclick = function () {
     form.style.display = 'none'
     black.style.display = 'none'
 }
+
 // class Library {
 //     constructor(title, author, pages) {
 //         this.title = ' ';
@@ -84,10 +89,11 @@ class Book {
 
 
 
+
 const button = document.getElementById('button')
 button.addEventListener('click', function (event) {
     event.preventDefault();
-
+ 
     const title = document.getElementById('title').value;
     const author = document.getElementById('author').value;
     const pages = document.getElementById('page').value;

@@ -15,6 +15,8 @@
 body {
     background-color: rgb(214, 212, 212);
     font-family: bold;
+    margin: 0;
+    padding: 0;
 }
 
 #nav li {
@@ -204,4 +206,100 @@ input[type="text"] {
     bottom: 233px;
     /* margin-left: 300px; */
     z-index: 0;
+}
+
+@media only screen and (max-width:1000px) and (min-width:100px) {
+    #nav ul {
+        width: 1000px;
+    }
+
+    #login {
+        margin-left: 600px;
+    }
+
+    #add {
+        margin-left: 400px;
+    }
+
+    #black {
+        width: 1000px;
+        /* height: 210vh;
+        position: absolute;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.416);
+        z-index: 1; */
+    }
+
+    #form {
+        margin-left: 400px;
+    }
+}
+
+@media only screen and (max-width:1000px) and (min-width:800px) {
+    #black {
+        width: 1000px;
+        height: 130vh;
+        position: absolute;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.416);
+        z-index: 1;
+    }
+    .book-item{
+        margin-bottom:20vh;
+    }
+}
+@media only screen and (max-width:800px) and (min-width:600px) {
+    #black {
+        width: 1000px;
+        height: 160vh;
+        position: absolute;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.416);
+        z-index: 1;
+    }
+    .book-item{
+        margin-bottom:50vh;
+    }
+}
+@media only screen and (max-width:600px) and (min-width:500px) {
+    #black {
+        width: 1000px;
+        height: 200vh;
+        position: absolute;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.416);
+        z-index: 1;
+    }
+    .book-item{
+        margin-bottom:80vh;
+    }
+}
+@media only screen and (max-width:500px) and (min-width:200px) {
+    #black {
+        width: 1000px;
+        height: 270vh;
+        position: absolute;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.416);
+        z-index: 1;
+    }
+    
+}
+@media only screen and (max-width:500px) and (min-width:400px) {
+    .book-item{
+        margin-bottom:90vh;
+    }
+    
+}
+@media only screen and (max-width:400px) and (min-width:300px) {
+    .book-item{
+        margin-bottom:150vh;
+    }
+    
+}
+@media only screen and (max-width:300px) and (min-width:200px) {
+    .book-item{
+        margin-bottom:220vh;
+    }
+    
 }
