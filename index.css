@@ -223,11 +223,6 @@ input[type="text"] {
 
     #black {
         width: 1000px;
-        /* height: 210vh;
-        position: absolute;
-        display: block;
-        background-color: rgba(0, 0, 0, 0.416);
-        z-index: 1; */
     }
 
     #form {
@@ -285,9 +280,15 @@ input[type="text"] {
     }
     
 }
-@media only screen and (max-width:500px) and (min-width:400px) {
+@media only screen and (max-width:430px) and (min-width:400px) {
     .book-item{
-        margin-bottom:90vh;
+        margin-bottom:160vh;
+    }
+    
+}
+@media only screen and (max-width:500px) and (min-width:430px) {
+    .book-item{
+        margin-bottom:120vh;
     }
     
 }
