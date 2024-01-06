@@ -49,7 +49,7 @@ body {
     border-radius: 4px;
     background-color: rgb(150, 150, 150);
     color: black;
-
+     position: relative;
 }
 
 #login:hover {
@@ -242,6 +242,10 @@ input[type="text"] {
     .book-item{
         margin-bottom:20vh;
     }
+    #form_2{
+        position: absolute;
+        right: 300px;
+    }
 }
 @media only screen and (max-width:800px) and (min-width:600px) {
     #black {
@@ -254,6 +258,10 @@ input[type="text"] {
     }
     .book-item{
         margin-bottom:50vh;
+    }
+    #form_2{
+        position: absolute;
+        right: 450px;
     }
 }
 @media only screen and (max-width:600px) and (min-width:500px) {
@@ -268,6 +276,10 @@ input[type="text"] {
     .book-item{
         margin-bottom:80vh;
     }
+    #form_2{
+        position: absolute;
+        right: 300px;
+    }
 }
 @media only screen and (max-width:500px) and (min-width:200px) {
     #black {
@@ -278,6 +290,11 @@ input[type="text"] {
         background-color: rgba(0, 0, 0, 0.416);
         z-index: 1;
     }
+    #form_2{
+        position: absolute;
+        right: 300px;
+    }
+   
     
 }
 @media only screen and (max-width:430px) and (min-width:400px) {
@@ -302,5 +319,26 @@ input[type="text"] {
     .book-item{
         margin-bottom:220vh;
     }
+    
+}
+#form_2{
+    background-color: rgb(0, 255, 17);
+    width: 400px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-left: 600px;
+    border-radius: 10px;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+.btn{
+    font-size: 25px;
+    margin-bottom: 100px;
+    background-color: rgb(50, 141, 68);
+    color: white;
+    border: none;
+    border-radius: 4px;
     
 }

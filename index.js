@@ -11,11 +11,21 @@ add.addEventListener('click', function () {
 const body = document.getElementById('black');
 black.style.display = 'none'
 
+
+
+const form_2 = document.getElementById('form_2')
+form_2.style.display='none'
+const login = document.getElementById('login')
+login.addEventListener('click',function(){
+    form_2.style.display='block'
+    black.style.display = 'block'
+})
+
 body.onclick = function () {
     form.style.display = 'none'
     black.style.display = 'none'
+    form_2.style.display = 'none'
 }
-
 // class Library {
 //     constructor(title, author, pages) {
 //         this.title = ' ';
@@ -109,7 +119,6 @@ button.addEventListener('click', function (event) {
     document.getElementById('black').style.display = 'none';
 
 });
-
 
 
 
