@@ -391,9 +391,12 @@ input{
     font-size: 20px;
 }
 @media only screen and (max-width:1080px) and (min-width:200px){
-    .book-item{
-        
+    #book_library {
+        display: flex;
+        padding: 10px;
     }
+
+ 
 }
 @media only screen and (max-width:1500px) and (min-width:1000px){
     #add{
@@ -403,7 +406,7 @@ input{
 #book_library {
     display: flex;
     flex-wrap: wrap;
-    padding: 40px 300px;
+    padding: 20px 50px;
 }
 
 .book-item {
@@ -415,7 +418,17 @@ input{
 }
 
 
-
+@media only screen and (max-width:940px) and (min-width:200px){
+    #book_library {
+       margin-left: 200px;
+       width: 700px;
+    }
+    .book-item {
+        width: 500px;
+    }
+   
+ 
+}
 
 
 
