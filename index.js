@@ -3,14 +3,20 @@ form.style.display = 'none';
 
 const add = document.getElementById('add')
 
-add.addEventListener('click', function () {
-    form.style.display = 'block';
-    black.style.display = 'block'
-})
 
 const body = document.getElementById('black');
-black.style.display = 'none'
+body.style.display = 'none';
 
+const body1 = document.body;
+
+
+
+add.addEventListener('click', function () {
+    form.style.display = 'block';
+    body.style.display = 'block';
+    body1.style.overflow = 'hidden';
+   
+});
 
 
 const form_2 = document.getElementById('form_2')
@@ -19,12 +25,14 @@ const login = document.getElementById('login')
 login.addEventListener('click',function(){
     form_2.style.display='block'
     black.style.display = 'block'
+    body1.style.overflow = 'hidden';
 })
 
 body.onclick = function () {
     form.style.display = 'none'
     black.style.display = 'none'
     form_2.style.display = 'none'
+    body1.style.overflow = 'auto';
 }
 const imgInput = document.getElementById('img_url');
 
@@ -65,10 +73,14 @@ class Book {
             if (this.isRead) {
                 this.isRead = false;
                 readBtn.textContent = 'Not Read';
+                readBtn.style.backgroundColor='rgb(0, 255, 17)'
+                readBtn.style.color="black"
 
             } else {
                 this.isRead = true;
                 readBtn.textContent = 'Read';
+                readBtn.style.backgroundColor=' rgb(100, 70, 883)'
+                readBtn.style.color="white"
 
             }
 
@@ -89,34 +101,51 @@ class Book {
         const remove = bookDiv.querySelector('#remove');
         remove.addEventListener('click', () => {
             bookDiv.remove();
-
+            const index = bookLibrary.indexOf(this);
+            if (index !== -1) {
+                bookLibrary.splice(index, 1);
+            }
+             console.log(index)
         });
     }
 
 }
 
 
-
+const bookLibrary = [];
 
 const button = document.getElementById('button')
 button.addEventListener('click', function (event) {
     event.preventDefault();
- 
+    form.style.display='none'
+    body.style.display='none'
+    body1.style.overflow = 'auto';
+
+    
     const title = document.getElementById('title').value;
     const author = document.getElementById('author').value;
     const pages = document.getElementById('page').value;
+    const imgInput = document.getElementById('img_url').value;
 
-    const newBook = new Book(title, author, pages);
+    const newBook = new Book(title, author, pages, imgInput);
     newBook.displayDetails();
+    bookLibrary.push(newBook);
 
+    
     document.getElementById('title').value = '';
     document.getElementById('author').value = '';
     document.getElementById('page').value = '';
+    document.getElementById('img_url').value = '';
 
     document.getElementById('form').style.display = 'none';
     document.getElementById('black').style.display = 'none';
 
 });
+function displayLibraryDetails() {
+    bookLibrary.forEach(book => {
+        book.displayDetails();
+    });
+}
 
 
 

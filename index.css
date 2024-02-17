@@ -195,7 +195,7 @@ input{
     width: 190px;
     height: 35px;
     border-radius: 10px;
-    background-color: aquamarine;
+    background-color: rgb(255, 0, 0);
     margin-top: 20px;
     color: rgb(0, 0, 0);
 }
@@ -340,8 +340,8 @@ input{
     font-size: 25px;
     margin-left: 700px;
     border-radius: 10px;
-    height: 400px;
-    position: relative;
+    height: 500px;
+    position: fixed;
     z-index: 1;
 }
 .btn1{
@@ -375,12 +375,14 @@ input{
 #password{
     width: 240px;
     height: 30px;
+    
  }
 
  .book-item{
     border: 1px solid #ccc;
     padding: 20px;
     margin: 10px;
+    width: 350px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -388,8 +390,37 @@ input{
     color: rgb(255, 255, 255);
     font-size: 20px;
 }
+@media only screen and (max-width:1080px) and (min-width:200px){
+    .book-item{
+        
+    }
+}
 @media only screen and (max-width:1500px) and (min-width:1000px){
     #add{
         margin-left: 500px;
     }
 }
+#book_library {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 300px;
+}
+
+.book-item {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
