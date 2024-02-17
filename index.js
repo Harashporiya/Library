@@ -26,37 +26,35 @@ body.onclick = function () {
     black.style.display = 'none'
     form_2.style.display = 'none'
 }
-// class Library {
-//     constructor(title, author, pages) {
-//         this.title = ' ';
-//         this.author = '';
-//         this.pages = '';
-//     }
-// }
+const imgInput = document.getElementById('img_url');
+
+
 class Book {
     constructor(title, author, pages) {
         this.title = title;
         this.author = author;
         this.pages = pages;
-        // this.checked = checked;
+       
         this.isRead = false;
     }
 
     displayDetails() {
-
+      
+        const imageUrl = imgInput.value;
         const bookDetails = `
-            <p>Title: ${this.title}</p>
-            <p>Author: ${this.author}</p>
-            <p>Pages: ${this.pages}</p>
+            <p class="title"><b>Title: ${this.title}</b></p>
+            <p class="title"><b>Author: ${this.author}</b></p>
+            <p class="title"><b>Pages: ${this.pages}</b></p>
             <button id="readBtn"> Not read</button>
             <button id="remove">Remove</button>
         `;
-        // document.getElementById('book_library').innerHTML = bookDetails;
-
+    
         const bookDiv = document.createElement('div');
         bookDiv.classList.add('book-item');
         bookDiv.innerHTML = bookDetails;
-        document.getElementById('book_library').appendChild(bookDiv);
+        
+        bookDiv.style.backgroundImage = `url('${imageUrl}')`;
+         document.getElementById('book_library').appendChild(bookDiv);
 
         console.log(`Title: ${this.title}`);
         console.log(`Author: ${this.author}`);

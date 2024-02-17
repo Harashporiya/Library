@@ -62,7 +62,7 @@ body {
     color: rgb(0, 0, 0);
     font-size: 40px;
     margin-top: 70px;
-    margin-left: 650px;
+    margin-left: 850px;
     height: 60px;
     width: 200px;
     border-radius: 7px;
@@ -78,9 +78,9 @@ body {
 
 #form {
     background-color: #ff0101;
-    height: 350px;
+    height: 400px;
     width: 250px;
-    margin-left: 630px;
+    margin-left: 830px;
     margin-top: 70px;
     box-shadow: 10px 10px 10px rgb(205, 36, 36);
     position: fixed;
@@ -97,6 +97,14 @@ body {
 }
 
 #author {
+    height: 35px;
+    width: 190px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 10px;
+
+}
+#img_url{
     height: 35px;
     width: 190px;
     margin-left: 30px;
@@ -156,12 +164,14 @@ input::placeholder {
 input[type="text"] {
     font-size: 25px;
 }
-
+input{
+    padding: 0 10px;
+}
 
 #black {
     position: absolute;
-    height: 720px;
-    width: 1510px;
+    height: 100%;
+    width: 100%;
     display: block;
     background-color: rgba(0, 0, 0, 0.416);
     z-index: 1;
@@ -199,12 +209,13 @@ input[type="text"] {
     height: 250px;
     width: 250px;
     text-align: center;
-    background-color: rgb(255, 0, 0);
+    /* background-color: rgb(255, 0, 0); */
     color: white;
     border-radius: 10px;
     position: fixed;
-    bottom: 233px;
-    /* margin-left: 300px; */
+    /* bottom: 233px; */
+    margin-left: 120px;
+    
     z-index: 0;
 }
 
@@ -327,7 +338,7 @@ input[type="text"] {
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 25px;
-    margin-left: 600px;
+    margin-left: 700px;
     border-radius: 10px;
     height: 400px;
     position: relative;
@@ -365,3 +376,20 @@ input[type="text"] {
     width: 240px;
     height: 30px;
  }
+
+ .book-item{
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+@media only screen and (max-width:1500px) and (min-width:1000px){
+    #add{
+        margin-left: 500px;
+    }
+}
